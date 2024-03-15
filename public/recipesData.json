@@ -1,0 +1,95 @@
+[
+  {
+    "recipe_id": 1,
+    "recipe_name": "Spaghetti Carbonara",
+    "short_description": "Classic Italian pasta dish with creamy sauce",
+    "ingredients": [
+      "300g spaghetti",
+      "150g pancetta or bacon",
+      "3 large eggs",
+      "50g grated Parmesan cheese",
+      "Salt and black pepper to taste"
+    ],
+    "preparing_time": "20 min",
+    "calories": "450 calories",
+    "recipe_image": "spaghetti_carbonara.jpg"
+  },
+  {
+    "recipe_id": 2,
+    "recipe_name": "Chicken Stir-Fry",
+    "short_description": "Quick and flavorful Asian-inspired dish",
+    "ingredients": [
+      "400g chicken breast, sliced",
+      "200g mixed vegetables (bell peppers, broccoli, carrots)",
+      "120ml soy sauce",
+      "2 cloves garlic, minced",
+      "1 tablespoon ginger, grated"
+    ],
+    "preparing_time": "25 min",
+    "calories": "320 calories",
+    "recipe_image": "chicken_stir_fry.jpg"
+  },
+  {
+    "recipe_id": 3,
+    "recipe_name": "Caprese Salad",
+    "short_description": "Simple and refreshing Italian salad",
+    "ingredients": [
+      "250g fresh mozzarella cheese",
+      "300g ripe tomatoes",
+      "Fresh basil leaves",
+      "Extra virgin olive oil",
+      "Balsamic glaze",
+      "Salt and pepper to taste"
+    ],
+    "preparing_time": "15 min",
+    "calories": "220 calories",
+    "recipe_image": "caprese_salad.jpg"
+  },
+  {
+    "recipe_id": 4,
+    "recipe_name": "Vegetable Curry",
+    "short_description": "Hearty and aromatic vegetarian curry",
+    "ingredients": [
+      "2 cups mixed vegetables (potatoes, carrots, peas)",
+      "1 can (400ml) coconut milk",
+      "1 onion, chopped",
+      "2 cloves garlic, minced",
+      "1 tablespoon curry powder",
+      "Salt to taste"
+    ],
+    "preparing_time": "30 min",
+    "calories": "280 calories",
+    "recipe_image": "vegetable_curry.jpg"
+  },
+  {
+    "recipe_id": 5,
+    "recipe_name": "Grilled Salmon",
+    "short_description": "Healthy and delicious seafood option",
+    "ingredients": [
+      "4 salmon fillets",
+      "Juice of 1 lemon",
+      "2 tablespoons olive oil",
+      "2 cloves garlic, minced",
+      "Fresh dill or parsley for garnish"
+    ],
+    "preparing_time": "20 min",
+    "calories": "350 calories",
+    "recipe_image": "grilled_salmon.jpg"
+  },
+  {
+    "recipe_id": 6,
+    "recipe_name": "Banana Bread",
+    "short_description": "Moist and flavorful homemade bread",
+    "ingredients": [
+      "3 ripe bananas",
+      "200g all-purpose flour",
+      "100g granulated sugar",
+      "1 teaspoon baking soda",
+      "1/2 teaspoon salt",
+      "1/2 cup unsalted butter, melted"
+    ],
+    "preparing_time": "50 min",
+    "calories": "200 calories",
+    "recipe_image": "banana_bread.jpg"
+  }
+]

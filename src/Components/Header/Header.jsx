@@ -101,10 +101,10 @@ const Header = () => {
             well world-class Programmer.
           </p>
           <div className="space-x-3">
-            <button className="btn bg-[#0be58a] font-semibold border-none rounded-full">
+            <button className="btn bg-[#0be58a] font-bold border-none rounded-full">
               Explore Now
             </button>
-            <button className="btn text-white font-semibold bg-transparent rounded-full">
+            <button className="btn text-white font-bold bg-transparent rounded-full">
               Our Feedback
             </button>
           </div>
