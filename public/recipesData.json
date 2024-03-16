@@ -12,7 +12,7 @@
     ],
     "preparing_time": "20 min",
     "calories": "450 calories",
-    "recipe_image": "spaghetti_carbonara.jpg"
+    "recipe_image": "https://i.ibb.co/rH3RTd3/Spaghetti-Carbonara.jpg"
   },
   {
     "recipe_id": 2,
@@ -27,7 +27,7 @@
     ],
     "preparing_time": "25 min",
     "calories": "320 calories",
-    "recipe_image": "chicken_stir_fry.jpg"
+    "recipe_image": "https://i.ibb.co/64BNCMj/Chicken-Stir-Fry.jpg"
   },
   {
     "recipe_id": 3,
@@ -43,7 +43,7 @@
     ],
     "preparing_time": "15 min",
     "calories": "220 calories",
-    "recipe_image": "caprese_salad.jpg"
+    "recipe_image": "https://i.ibb.co/f2vQFFP/Caprese-Salad.jpg"
   },
   {
     "recipe_id": 4,
@@ -59,7 +59,7 @@
     ],
     "preparing_time": "30 min",
     "calories": "280 calories",
-    "recipe_image": "vegetable_curry.jpg"
+    "recipe_image": "https://i.ibb.co/vjH1ZVB/Vegetable-Curry.jpg"
   },
   {
     "recipe_id": 5,
@@ -74,7 +74,7 @@
     ],
     "preparing_time": "20 min",
     "calories": "350 calories",
-    "recipe_image": "grilled_salmon.jpg"
+    "recipe_image": "https://i.ibb.co/yhsk5fL/Grilled-Salmon.jpg"
   },
   {
     "recipe_id": 6,
@@ -90,6 +90,6 @@
     ],
     "preparing_time": "50 min",
     "calories": "200 calories",
-    "recipe_image": "banana_bread.jpg"
+    "recipe_image": "https://i.ibb.co/p16hCwm/Banana-Bread.jpg"
   }
 ]

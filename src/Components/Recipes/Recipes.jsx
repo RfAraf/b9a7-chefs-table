@@ -1,7 +1,28 @@
+import { useEffect, useState } from "react";
 import Cart from "../Cart/Cart";
 import Recipe from "../Recipe/Recipe";
 
 const Recipes = () => {
+  const [recipes, setRecipes] = useState([]);
+  const [cart, setCart] = useState([]);
+  // console.log(cart);
+
+  useEffect(() => {
+    fetch("recipesData.json")
+      .then((res) => res.json())
+      .then((data) => setRecipes(data));
+  }, []);
+
+  const handleCook = (recipe) => {
+    const newCart = [...cart, recipe];
+    const isExist = cart.find((item) => item.recipe_id === recipe.recipe_id);
+    if (!isExist) {
+      setCart(newCart);
+    } else {
+      alert("already added");
+    }
+  };
+
   return (
     <section className="mt-24">
       <div className="text-center">
@@ -16,13 +37,14 @@ const Recipes = () => {
       {/* recipe body */}
       <div className="grid grid-cols-12 gap-5">
         {/* left portion */}
-        <div className="col-span-7 flex gap-5 ">
-          <Recipe></Recipe>
-          <Recipe></Recipe>
+        <div className="col-span-7 grid grid-cols-2 gap-5 ">
+          {recipes.map((recipe, idx) => (
+            <Recipe key={idx} recipe={recipe} handleCook={handleCook}></Recipe>
+          ))}
         </div>
         {/* right portion */}
         <div className="col-span-5 ">
-          <Cart></Cart>
+          <Cart cart={cart}></Cart>
         </div>
       </div>
     </section>
