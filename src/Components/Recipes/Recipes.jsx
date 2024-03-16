@@ -7,7 +7,8 @@ import Recipe from "../Recipe/Recipe";
 const Recipes = () => {
   const [recipes, setRecipes] = useState([]);
   const [cart, setCart] = useState([]);
-  // console.log(cart);
+  const [currentCooking, setCurrentCooking] = useState([]);
+  console.log(currentCooking);
 
   useEffect(() => {
     fetch("recipesData.json")
@@ -21,8 +22,17 @@ const Recipes = () => {
     if (!isExist) {
       setCart(newCart);
     } else {
-      toast.warn("Already exist");
+      toast.warn(`${recipe.recipe_name} already selected`);
     }
+  };
+
+  const handlePrepare = (id, item) => {
+    // console.log(item);
+    const remainingCart = cart.filter((item) => item.recipe_id !== id);
+    setCart(remainingCart);
+
+    const cookingCart = [...currentCooking, item];
+    setCurrentCooking(cookingCart);
   };
 
   return (
@@ -46,7 +56,11 @@ const Recipes = () => {
         </div>
         {/* right portion */}
         <div className="col-span-5 ">
-          <Cart cart={cart}></Cart>
+          <Cart
+            cart={cart}
+            handlePrepare={handlePrepare}
+            currentCooking={currentCooking}
+          ></Cart>
         </div>
       </div>
       <ToastContainer />
