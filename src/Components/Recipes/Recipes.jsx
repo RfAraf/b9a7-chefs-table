@@ -1,3 +1,5 @@
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { useEffect, useState } from "react";
 import Cart from "../Cart/Cart";
 import Recipe from "../Recipe/Recipe";
@@ -19,7 +21,7 @@ const Recipes = () => {
     if (!isExist) {
       setCart(newCart);
     } else {
-      alert("already added");
+      toast.warn("Already exist");
     }
   };
 
@@ -47,6 +49,7 @@ const Recipes = () => {
           <Cart cart={cart}></Cart>
         </div>
       </div>
+      <ToastContainer />
     </section>
   );
 };
