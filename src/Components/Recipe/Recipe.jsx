@@ -23,7 +23,7 @@ const Recipe = ({ recipe, handleCook }) => {
           <p className="text-[#878787] font-fira">{short_description}</p>
           <hr />
           <div className="space-y-3">
-            <h3 className="font-semibold">Ingredients: 5</h3>
+            <h3 className="font-semibold">Ingredients: {ingredients.length}</h3>
             <ul className="text-[#878787] space-y-2 list-disc pl-4 font-fira">
               {ingredients.map((ingredient, idx) => (
                 <li key={idx}>{ingredient}</li>

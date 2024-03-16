@@ -4,7 +4,7 @@ import banner from "../../assets/images/banner.png";
 const Header = () => {
   return (
     <header>
-      <nav className="mt-12">
+      <nav>
         <div className="navbar bg-base-100">
           <div className="navbar-start">
             <div className="dropdown">
@@ -66,7 +66,7 @@ const Header = () => {
           </div>
 
           <div className="navbar-end">
-            <label className="input input-bordered flex items-center gap-2">
+            <label className="input input-bordered flex items-center gap-2 hidden md:flex">
               <input type="text" className="grow" placeholder="Search" />
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -81,24 +81,35 @@ const Header = () => {
                 />
               </svg>
             </label>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 16 16"
+              fill="currentColor"
+              className="w-6 h-6 md:hidden opacity-70"
+            >
+              <path
+                fillRule="evenodd"
+                d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
+                clipRule="evenodd"
+              />
+            </svg>
             <div className="bg-[#0be58a] rounded-full ml-5 p-2">
               <img src={profile} alt="" />
             </div>
-            {/* <a className="btn">Button</a> */}
           </div>
         </div>
       </nav>
       {/* banner */}
-      <div className="relative ">
-        <img src={banner} alt="" />
-        <div className="absolute text-center w-[800px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 space-y-5 ">
-          <h1 className="text-white font-bold text-5xl">
+      <div className="relative mt-5">
+        <img className="w-screen h-80 md:h-auto" src={banner} alt="" />
+        <div className="absolute text-center w-80 lg:w-[800px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 space-y-5 ">
+          <h1 className="text-white font-bold text-2xl lg:text-5xl">
             Discover an exceptional cooking class tailored for you!
           </h1>
           <p className="text-white">
-            Learn and Master Basic Programming, Data Structures, Algorithm, OOP,
-            Database and solve 500+ coding problems to become an exceptionally
-            well world-class Programmer.
+            Elevate your cooking experience with our tantalizing recipes.
+            Explore flavors, create memories, and delight your taste buds with
+            every dish.
           </p>
           <div className="space-x-3">
             <button className="btn bg-[#0be58a] font-bold border-none rounded-full">

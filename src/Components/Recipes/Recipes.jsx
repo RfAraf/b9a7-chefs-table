@@ -8,7 +8,6 @@ const Recipes = () => {
   const [recipes, setRecipes] = useState([]);
   const [cart, setCart] = useState([]);
   const [currentCooking, setCurrentCooking] = useState([]);
-  console.log(currentCooking);
 
   useEffect(() => {
     fetch("recipesData.json")
@@ -27,7 +26,6 @@ const Recipes = () => {
   };
 
   const handlePrepare = (id, item) => {
-    // console.log(item);
     const remainingCart = cart.filter((item) => item.recipe_id !== id);
     setCart(remainingCart);
 
@@ -47,9 +45,9 @@ const Recipes = () => {
       </div>
 
       {/* recipe body */}
-      <div className="grid grid-cols-12 gap-5">
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-5">
         {/* left portion */}
-        <div className="col-span-7 grid grid-cols-2 gap-5 ">
+        <div className="col-span-7 grid grid-cols-1 md:grid-cols-2 gap-5 ">
           {recipes.map((recipe, idx) => (
             <Recipe key={idx} recipe={recipe} handleCook={handleCook}></Recipe>
           ))}
